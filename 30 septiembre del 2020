@@ -1,0 +1,9 @@
+hora=[]
+minuto=[]
+for i in range (0, 25):
+    hora=i
+    for j in range(0,61):
+        minuto=j
+       # print(hora,minuto)
+        if hora== minuto:
+            print(hora,":", minuto)
