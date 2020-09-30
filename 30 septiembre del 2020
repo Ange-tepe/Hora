@@ -1,9 +1,15 @@
-hora=[]
-minuto=[]
-for i in range (0, 25):
-    hora=i
-    for j in range(0,61):
-        minuto=j
-       # print(hora,minuto)
-        if hora== minuto:
-            print(hora,":", minuto)
+hora=[[]]
+horad=[[]]
+minuto=[[]]
+minutoD=[[]]
+for j in range (0,3):
+    for y in range (0,10):
+        hora= y,j
+        horad=j,y
+        #print(hora)
+        for i in range (0, 6):
+            for h in range(0,10):
+                minuto=h,i
+                minutoD=i,h
+                if hora==minutoD and minuto==horad:
+                    print(horad,":",minutoD)
